@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Counter Using HTML</h1>
+        <div class="show">
+            <div>
+                <span>
+                    <p>Your Current Count is :</p>
+                    <p id="value">0</p>
+                </span>
+            </div>
+            <hr>
+            <p id="err">Error : Cannot go below 0</p>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="increment">Increment</button>
+            <button class="btn" disabled id="decrement">Decrement</button>
+            <button class="btn clear-btn" id="clear">Clear</button>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

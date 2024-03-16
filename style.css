@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito', sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    width: 12%;
+    min-width: 100px;
+}
+
+.show {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.show div span {
+    display: flex;
+    gap: 8px;
+}
+
+.show div span p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.clear-btn {
+    color: white;
+    background: black;
+    border: 1px solid white;
+}
+
+#err {
+    color: #ff4e4e87;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: none;
+}
+
+.btn:active {
+    background: grey;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        font-size: 1rem
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .show {
+        margin: auto;
+    }
+
+    .show div span {
+        flex-direction: column;
+    }
+}
